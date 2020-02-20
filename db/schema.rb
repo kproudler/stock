@@ -23,6 +23,8 @@ ActiveRecord::Schema.define(version: 2020_02_18_042742) do
   end
 
   create_table "user_stocks", force: :cascade do |t|
+    t.integer "stock_id"
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
